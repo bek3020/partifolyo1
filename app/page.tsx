@@ -165,7 +165,6 @@ export default function Page() {
             </p>
           </div>
 
-          {/* BU YERDA HAM WIDTH VA HEIGHT QO'SHILDI */}
           <Image
             src="/img/bac.png"
             alt="About me"
