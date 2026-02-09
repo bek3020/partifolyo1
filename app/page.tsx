@@ -87,9 +87,12 @@ export default function Page() {
                 key={p.title}
                 className="bg-[#292b2d] border border-white/5 rounded overflow-hidden"
               >
-                <img
+                {/* BU YERDA WIDTH VA HEIGHT QO'SHILDI */}
+                <Image
                   src={p.img}
                   alt={p.title}
+                  width={400}
+                  height={200}
                   className="h-40 w-full object-cover"
                 />
 
@@ -162,13 +165,17 @@ export default function Page() {
             </p>
           </div>
 
-          <img
+          {/* BU YERDA HAM WIDTH VA HEIGHT QO'SHILDI */}
+          <Image
             src="/img/bac.png"
             alt="About me"
-            className="rounded-lg w-full"
+            width={500}
+            height={400}
+            className="rounded-lg w-full h-auto object-cover"
           />
         </div>
       </section>
+
       <section id="contacts" className="py-20">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-10">
           <div className="border border-gray-600 p-6 rounded max-w-md">
@@ -178,11 +185,17 @@ export default function Page() {
 
           <div className="border border-gray-600 p-6 rounded flex flex-col space-y-2">
             <p className="font-semibold text-white">Message me</p>
-            <a href="mailto:esomurodovbehruz19@gmail.com">
+            <a
+              href="mailto:esomurodovbehruz19@gmail.com"
+              className="hover:text-[#b468e6]"
+            >
               esomurodovbehruz19@gmail.com
             </a>
             <p>
-              Tel: <a href="tel:+998998682283">+998 99 868 22 83</a>
+              Tel:{" "}
+              <a href="tel:+998998682283" className="hover:text-[#b468e6]">
+                +998 99 868 22 83
+              </a>
             </p>
             <p>
               Telegram:{" "}
@@ -190,6 +203,7 @@ export default function Page() {
                 href="https://t.me/Esomurodov"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-[#b468e6]"
               >
                 @Esomurodov
               </a>
@@ -197,15 +211,25 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <footer className="border-t border-gray-600 py-8 text-center text-sm">
         <div className="flex justify-center gap-6 mb-4 text-xl">
-          <a href="https://github.com/bek3020/">
+          <a
+            href="https://github.com/bek3020/"
+            className="hover:text-[#b468e6] transition"
+          >
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/behruz-esomurodov-12188531b/">
+          <a
+            href="https://www.linkedin.com/in/behruz-esomurodov-12188531b/"
+            className="hover:text-[#b468e6] transition"
+          >
             <FaLinkedin />
           </a>
-          <a href="https://www.instagram.com/behruz_js/">
+          <a
+            href="https://www.instagram.com/behruz_js/"
+            className="hover:text-[#b468e6] transition"
+          >
             <FaInstagram />
           </a>
         </div>
