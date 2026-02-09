@@ -38,6 +38,12 @@ const skills = {
 export default function Page() {
   return (
     <main className="bg-[#2a2d31] text-[#bfc6cc]">
+
+
+
+
+
+      {/* Hero Section */}
       <section id="home" className="py-20">
         <div className="max-w-6xl mx-auto px-4 grid gap-10 lg:grid-cols-[1fr_420px] items-center">
           <div>
@@ -75,6 +81,11 @@ export default function Page() {
         </div>
       </section>
 
+
+
+
+
+      {/* Projects Section */}
       <section id="projects" className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-mono text-3xl mb-8">
@@ -128,10 +139,23 @@ export default function Page() {
         </div>
       </section>
 
+
+
+
+
+      {/* Skills Section */}
       <section id="skills" className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="font-mono text-3xl mb-10">
             <span className="text-[#C778DD]">#</span>skills
+
+
+            
+
+            
+
+            
+
           </h2>
 
           <div className="flex flex-wrap gap-4">
@@ -150,6 +174,11 @@ export default function Page() {
         </div>
       </section>
 
+
+
+
+
+      {/* About Me Section */}
       <section id="about-me" className="py-20">
         <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div>
@@ -163,6 +192,14 @@ export default function Page() {
             <p className="text-white/60">
               I enjoy building real projects and constantly improving my skills.
             </p>
+
+
+            
+
+            
+
+            
+
           </div>
 
           <Image
@@ -181,6 +218,8 @@ export default function Page() {
             I’m open to freelance opportunities. Feel free to reach out if you
             want to work together.
           </div>
+
+
 
           <div className="border border-gray-600 p-6 rounded flex flex-col space-y-2">
             <p className="font-semibold text-white">Message me</p>
